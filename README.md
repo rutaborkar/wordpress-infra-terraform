@@ -1,6 +1,6 @@
 # Terraform Infrastructure Deployment for 3-Tier Architecture
 
-This repository contains Terraform configuration files to deploy a 3-tier architecture infrastructure on AWS. The infrastructure includes networking components, security groups, S3 bucket, CloudFront CDN, RDS database, Auto Scaling Group (ASG) with an Application Load Balancer (ALB), and IAM roles and policies.
+This repository contains Terraform configuration files to deploy a 3-tier architecture infrastructure on AWS. The infrastructure includes networking components, security groups, S3 bucket, RDS database, Auto Scaling Group (ASG) with an Application Load Balancer (ALB), and IAM roles and policies.
 
 ## Infrastructure Components
 
@@ -9,7 +9,6 @@ This repository contains Terraform configuration files to deploy a 3-tier archit
 - **Subnets**: Creates public and private subnets within the VPC.
 - **Security Groups**: Defines security rules for EC2 instances and database access.
 - **S3 Bucket**: Sets up an S3 bucket for media uploads and code backup.
-- **CloudFront CDN**: Configures a CDN for low-latency content delivery.
 - **IAM Policies and Roles**: Manages permissions for accessing S3 and other AWS services.
 - **RDS Database**: Sets up a MySQL database instance with multi-AZ deployment.
 - **Auto Scaling Group**: Launches EC2 instances in response to demand with ALB and ASG.
