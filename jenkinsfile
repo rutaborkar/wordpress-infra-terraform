@@ -1,13 +1,7 @@
-secrets = [
-    [path: 'kv-aws/'+params.SUBSCRIPTION+'/secrets/service-principal', engineVersion: 2, secretValues: [
-    [envVar: 'AWS_ACCESS_KEY_ID', vaultKey: 'ACCESS_KEY_ID'],
-    [envVar: 'AWS_SECRET_ACCESS_KEY', vaultKey: 'SECRET_ACCESS_KEY']]],
-]
-
 pipeline {
     agent any
     environment {
-        AWS_DEFAULT_REGION = 'your-aws-region'
+        AWS_DEFAULT_REGION = 'us-east-1'
     }
     stages {
         stage('Checkout Code') {
